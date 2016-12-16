@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>gio hang</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width = device - width, initial-scale = 1.0">
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+    <!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+
+    <!-- Default Theme -->
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+
+    <!--  jQuery 1.7+  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Include js plugin -->
+    <script src="owl-carousel/owl.carousel.js"></script>
+    <script src="text.js"></script>
+    <script src="giohang.js"></script>
+
+</head>
+
+<body onload="getPrice();">
+    <div class="container" id="form-conteiner">
+        <div class="row" id="formthongtin">
+            <div class="col-sm-5" id="left-form">
+                <div id="thongtin-product">
+                    <img src="img/phone_samsung.png" class="img-rounded" alt="Cinque Terre" style="width: 200px;height: 200px; display: block;margin-left:80px;" id="imgchange">
+                </div>
+
+                <a href="#" style="margin-left:70px"> Samsung Galaxy J7 Prime </a>
+                <div>
+                    <h3 id="priceip">  6.290.000₫ </h3>
+                    <b>Quà khuyến mãi </b>
+                    <li>Cơ hội Trúng 30 xe Liberty Xem chi tiết (đến 31/10)</li>
+                    <li>Trả góp 0% HOẶC PMH 200,000đ (đến 31/10)</li>
+                    <li>Tặng gói bảo hiểm tai nạn bất ngờ (rơi vỡ, vào nước) trong 12 tháng Xem chi tiết (đến 31/10)</li>
+                    <li>Giảm ngay 5% khi Mua Laptop/ Tablet (đến 31/10)</li>
+                </div>
+            </div>
+
+
+            <div class="col-sm-5" id="thongtinkh">
+                <div id="rbgioitinh">
+                    <b>1. Thông tin người mua: <div class="radio" >
+                    
+                    <label  style=" position: absolute;
+    top: -25px;
+    left: 170px;"><input type="radio" name="nam">Anh</label>
+                    </div>
+                     <div class="radio">
+                    <label style=" position: absolute;
+    top: -25px;
+    left: 220px;"><input type="radio" name="nam">chi</label>
+                    </div>
+                </b>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" id="focusedInput" type="text" placeholder="Ho Va Ten">
+                    <input class="form-control" id="focusedInput" type="text" placeholder="So dtdd">
+                    <input class="form-control" id="focusedInput" type="text" placeholder="email">
+                </div>
+                <b>2. Chọn màu sản phẩm</b>
+                <div>
+                    <button type="button" class="btn btn-primary btn-xs" style="background-color: white; color: black;border-color: blue; border-radius: 10px; ">Den </button>
+                    <button style="background-color: white; color: black; border-color: blue;
+                                   border-radius: 10px;" type="button" class="btn btn-primary btn-xs">Trang &amp; Vang hong</button>
+                </div>
+                <b>3. Chọn phương thức nhận hàng</b>
+                <div class="radio" id="rb-giaohang">
+                    <label><input type="radio" name="giaohang">
+                        Giao tận nơi
+                    </label> <label>
+                    <input type="radio" name="giaohang"> Nhận ở cửa hàng</label>
+                </div>
+                <div id="datbangbtn">
+                    <button type="button" class="btn btn-primary btn-md" onclick="buy-pr">ĐẶT HÀNG</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
